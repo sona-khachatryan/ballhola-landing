@@ -1,0 +1,142 @@
+.hero {
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero__text__1, .hero__text__3 {
+    display: none;
+}
+
+.hero__text__2 {
+    font-size: var(--size-24);
+    font-weight: 700;
+    line-height: 30.17px;
+    letter-spacing: -0.48px;
+    position: absolute;
+    top: 301.95px;
+    margin-left: 20px;
+    border: 1px solid aqua;
+}
+
+.hero__image-container {
+    border: 1px solid antiquewhite;
+    display: flex;
+    position: relative;
+    width: 380.94px;
+    height: 281.95px;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.hero__player-image {
+    width: 298.88px;
+    height: 212.99px;
+    /*margin-left: 301.88px;*/
+    rotateY: -180deg;
+    z-index: 10;
+}
+
+.hero__phone-image {
+    width: 248.22px;
+    height: 253.42px;
+    position: absolute;
+    z-index: 8;
+    top: 8.87px;
+    left: 135.72px;
+    /*margin-top: 28.87px;*/
+    /*margin-left: 135.72px;*/
+}
+
+.hero__googleplay-logo {
+    width: 122px;
+    height: 39px;
+    position: absolute;
+    top: 410.94px;
+    left: 142px;
+}
+
+.hero__appstore-logo {
+    width: 112px;
+    height: 39px;
+    position: absolute;
+    top: 410.94px;
+    left: 20px;
+}
+/* xs */
+
+@media (min-width: 390px) {}
+
+/* sm */
+
+@media (min-width: 640px) {
+    .hero__text-container {
+        border: 1px solid white;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero__text__1 {
+        color: var(--clr-turquoise);
+        font-size: var(--size-xs);
+        font-weight: 300;
+        padding-bottom: 0.5rem;
+        display: block;
+    }
+
+    .hero__text__3 {
+        font-size: var(--size-xs);
+        padding-bottom: 0.5rem;
+        font-weight: 300;
+        letter-spacing: 0.01rem;
+        line-height: 1.1rem;
+        display: block;
+    }
+}
+
+/* md */
+
+@media (min-width: 768px) {
+
+}
+
+/* lg */
+
+@media (min-width: 1024px) {
+    .hero__text-container {
+        width: 660px;
+    }
+
+    .hero__text__1 {
+        color: var(--clr-turquoise);
+        font-size: var(--size-3xl);
+        font-weight: 350;
+        line-height: 1rem;
+        padding-bottom: 1.5rem;
+        letter-spacing: 0.01rem;
+    }
+
+    .hero__text__2 {
+        font-size: var(--size-5xl);
+        line-height: 4rem;
+    }
+
+    .hero__text__3 {
+        font-size: var(--size-xl);
+        padding-bottom: 0.5rem;
+        font-weight: 350;
+        letter-spacing: 0.02rem;
+        line-height: 1.7rem;
+    }
+}
+
+/* xl */
+
+@media (min-width: 1280px) {}
+
+/* 2xl */
+
+@media (min-width: 1536px) {}
