@@ -8,7 +8,7 @@ export default function Home() {
       <main>
          <Header/>
          <Hero/>
-         {/*<Features/>*/}
+         <Features/>
       </main>
    );
 }

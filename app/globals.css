@@ -1,6 +1,6 @@
 :root {
   --clr-dark-main: #04133E;
-  --clr-dark-bottom: #041440;
+  --clr-dark-blue: #041440;
   --clr-light: #ffffff;
   --clr-turquoise: #16D0B8;
   --clr-blue: #2A59D2;
@@ -27,6 +27,8 @@
   --size-12: 12px;
   --size-14: 14px;
   --size-15: 15px;
+  --size-16: 16px;
+  --size-18: 18px;
   --size-20: 20px;
   --size-22: 22px;
   --size-24: 24px;

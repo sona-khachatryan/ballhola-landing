@@ -4,7 +4,7 @@
     flex-direction: column;
     position: relative;
 
-    border: 1px solid greenyellow;
+    /*border: 1px solid pink;*/
 }
 
 .hero__text__1, .hero__text__3 {
@@ -22,7 +22,6 @@
 }
 
 .hero__image-container {
-    border: 1px solid antiquewhite;
     display: flex;
     position: relative;
     width: 380.94px;
@@ -117,26 +116,18 @@
         width: 500px;
         height: 323.96px;
         margin-top: 24px;
-        /*margin-left: 3px;*/
     }
 
     .hero__player-image {
         width: 250.23px;
-        /*height: 244.72px;*/
-        /*margin-left: 301.88px;*/
-        /*left: 20px;*/
     }
 
     .hero__phone-image {
         width: 193.58px;
-        /*height: 291.18px;*/
         position: relative;
         z-index: 8;
-        top: 6.2px;
+        top: 5px;
         left: -140px;
-        /*border: 1px solid greenyellow;*/
-        /*margin-top: 28.87px;*/
-        /*margin-left: 135.72px;*/
     }
 
     .hero__appstore-logo {
@@ -194,7 +185,7 @@
 
 @media (min-width: 1024px) {
     .hero {
-        height: 656px;
+        height: 400px;
         top: 32px;
     }
 
@@ -250,6 +241,7 @@
 @media (min-width: 1280px) {
     .hero {
         top: 142px;
+        height: 656px;
     }
 
     .hero__text-container {
@@ -294,7 +286,6 @@
     }
 
     .hero__phone-image {
-        border: 1px solid greenyellow;
         width: 395.73px;
         height: 418.05px;
         position: relative;
