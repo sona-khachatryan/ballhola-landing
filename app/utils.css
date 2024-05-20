@@ -3,7 +3,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     /*padding-left: 0.5rem;*/
     /*padding-right: 0.5rem;*/
 }
@@ -61,6 +61,13 @@
      .container {
          max-width: 1280px;
      }
+}
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
 }
 
 /* 2xl */

@@ -5,6 +5,8 @@
     align-items: center;
     top: 0;
     height: 66px;
+
+    border: 1px solid deepskyblue;
 }
 
 .header__menu {
