@@ -57,6 +57,7 @@ html {
 body {
   background-color: var(--clr-dark-main);
   color: var(--clr-light);
+  overflow-x: clip;
 }
 
 img,

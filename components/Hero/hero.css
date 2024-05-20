@@ -19,7 +19,6 @@
     position: absolute;
     top: 301.95px;
     margin-left: 20px;
-    border: 1px solid aqua;
 }
 
 .hero__image-container {
@@ -104,9 +103,6 @@
         top: 5px;
         margin-left: 0;
         display: block;
-
-        /*TO DELETE*/
-        border: none;
     }
 
     .hero__text__3 {
@@ -201,23 +197,63 @@
         height: 656px;
         top: 32px;
     }
+
+    .hero__text-container {
+        width: 450px;
+        height: 334px;
+        /*margin-top: 84px;*/
+        margin-left: 80px;
+    }
+
+    .hero__text__1 {
+        /*margin-top: 6px;*/
+        font-size: var(--size-22);
+        line-height: 31px;
+    }
+
+
+    .hero__text__2 {
+        top: 10px;
+        margin-left: 0;
+        font-size: var(--size-36);
+        line-height: 39px;
+    }
+
+    .hero__text__3 {
+        font-size: var(--size-20);
+        line-height: 22px;
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .hero__image-container {
+        margin-top: 24px;
+    }
+
+    .hero__appstore-logo {
+        width: 117px;
+        height: 57px;
+        top: 278px;
+        left: 80px;
+    }
+
+    .hero__googleplay-logo {
+        width: 124px;
+        height: 57px;
+        top: 278px;
+        left: 227px;
+    }
 }
 
 /* xl */
 
 @media (min-width: 1280px) {
-
-}
-
-/* 2xl */
-
-@media (min-width: 1440px) {
     .hero {
         top: 142px;
     }
 
     .hero__text-container {
-        width: 675px;
+        width: 590px;
         height: 334px;
         /*margin-top: 84px;*/
         margin-left: 80px;
@@ -233,14 +269,12 @@
     .hero__text__2 {
         top: 10px;
         margin-left: 0;
-        font-size: var(--size-54);
+        font-size: var(--size-48);
         line-height: 67.88px;
-        /*TO DELETE*/
-        border: none;
     }
 
     .hero__text__3 {
-        font-size: var(--size-24);
+        font-size: var(--size-22);
         line-height: 30.17px;
         width: 600px;
         margin-top: 20px;
@@ -254,19 +288,19 @@
     }
 
     .hero__player-image {
-        width: 548.73px;
-        height: 401.78px;
+        width: 488.73px;
+        height: 341.78px;
         /*margin-left: 301.88px;*/
-        left: 20px;
     }
 
     .hero__phone-image {
-        width: 455.73px;
-        height: 478.05px;
+        border: 1px solid greenyellow;
+        width: 395.73px;
+        height: 418.05px;
         position: relative;
         z-index: 8;
-        top: 20.2px;
-        left: -300px;
+        top: 10.2px;
+        left: -270px;
         /*margin-top: 28.87px;*/
         /*margin-left: 135.72px;*/
     }
@@ -283,6 +317,53 @@
         height: 57px;
         top: 388px;
         left: 277px;
+    }
+}
+
+/* 2xl */
+
+@media (min-width: 1440px) {
+    .hero {
+        top: 142px;
+    }
+
+    .hero__text-container {
+        width: 675px;
+        height: 334px;
+        margin-left: 80px;
+    }
+
+    .hero__text__1 {
+        /*margin-top: 6px;*/
+        font-size: var(--size-32);
+        line-height: 40.22px;
+    }
+
+
+    .hero__text__2 {
+        top: 10px;
+        margin-left: 0;
+        font-size: var(--size-54);
+        line-height: 67.88px;
+    }
+
+    .hero__text__3 {
+        font-size: var(--size-24);
+        line-height: 30.17px;
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .hero__player-image {
+        width: 548.73px;
+        height: 401.78px;
+    }
+
+    .hero__phone-image {
+        width: 455.73px;
+        height: 478.05px;
+        top: 20.2px;
+        left: -300px;
     }
 }
 
