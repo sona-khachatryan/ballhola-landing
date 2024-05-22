@@ -20,8 +20,8 @@ function Hero(props) {
             <img className='hero__phone-image' src='phone.svg' alt='phone'/>
          </div>
          <div className='hero__logo-container'>
-            <img className='hero__appstore-logo' src='app-store-logo.svg' alt='player'/>
-            <img className='hero__googleplay-logo' src='google-play-logo.svg' alt='phone'/>
+            <img className='hero__appstore-logo' src='app-store-logo.svg' alt='app store'/>
+            <img className='hero__googleplay-logo' src='google-play-logo.svg' alt='google play'/>
          </div>
       </section>
    </>);

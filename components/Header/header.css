@@ -44,7 +44,7 @@
     display: block;
     width: 30px;
     height: 2px;
-    background-color: var(--clr-turquoise);
+    background-color: var(--clr-dark-turquoise);
     margin-top: 2.5px;
     margin-bottom: 2.5px;
     transition: 300ms ease-out;
@@ -140,7 +140,10 @@
         padding: 6px 15px;
         top: 29px;
         right: 125px;
+    }
 
+    .header__btn:hover {
+        background: linear-gradient(265.73deg, #2A59D2 11%, #162E6C 84.45%);
     }
 
     .hamburger {

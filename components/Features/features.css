@@ -204,9 +204,9 @@
     }
 
     .features__title {
-        font-size: var(--size-48);
-        line-height: 60px;
-        letter-spacing: -0.96px;
+        font-size: var(--size-36);
+        line-height: 40px;
+        letter-spacing: -0.72px;
     }
 
     /*.features__icon-container {*/
@@ -284,6 +284,12 @@
 /* xl */
 
 @media (min-width: 1280px) {
+
+    .features__title {
+        font-size: var(--size-48);
+        line-height: 60px;
+        letter-spacing: -0.96px;
+    }
 
     /*.wave {*/
     /*    max-width: 1280px;*/

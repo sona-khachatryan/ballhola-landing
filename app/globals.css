@@ -2,7 +2,8 @@
   --clr-dark-main: #04133E;
   --clr-dark-blue: #041440;
   --clr-light: #ffffff;
-  --clr-turquoise: #16D0B8;
+  --clr-dark-turquoise: #16D0B8;
+  --clr-light-turquoise: #0CF9DD;
   --clr-blue: #2A59D2;
   --clr-shadow: rgba(0, 0, 0, 0.5);
 
@@ -49,7 +50,6 @@
 * {
   margin: 0;
   line-height: calc(1em + 0.5rem);
-  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
 html {
@@ -60,6 +60,7 @@ body {
   background-color: var(--clr-dark-main);
   color: var(--clr-light);
   overflow-x: clip;
+  font-family: 'Source_Sans_3', Arial, sans-serif;
 }
 
 img,
@@ -89,7 +90,7 @@ a {
 }
 
 span {
-  color: var(--clr-turquoise);
+  color: var(--clr-dark-turquoise);
 }
 
 
