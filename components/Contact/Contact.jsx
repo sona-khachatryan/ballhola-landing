@@ -47,7 +47,9 @@ function Contact(props) {
    };
 
    return (
-      <div className='container'
+      <div 
+         className='container'
+         id='contact'
          style={{position: 'relative'}}
       >
          <div className='contact-section-wrapper'>

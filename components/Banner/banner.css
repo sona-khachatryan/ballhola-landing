@@ -90,6 +90,7 @@
     top: 54px;
     right: 122px;
     position: absolute;
+    cursor: pointer;
 }
 
 .banner__googleplay-logo {
@@ -98,6 +99,7 @@
     top: 54px;
     right: 30px;
     position: absolute;
+    cursor: pointer;
 }
 
 @media (min-width: 390px) {}

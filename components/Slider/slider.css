@@ -7,6 +7,7 @@
 }
 
 .slider-main-container {
+    margin-top: 60px;
     position: relative;
     height: 310px;
     /*border: 1px solid orange;*/

@@ -55,6 +55,7 @@
     position: absolute;
     top: 410.94px;
     left: 142px;
+    cursor: pointer;
 }
 
 .hero__appstore-logo {
@@ -63,6 +64,7 @@
     position: absolute;
     top: 410.94px;
     left: 20px;
+    cursor: pointer;
 }
 /* xs */
 

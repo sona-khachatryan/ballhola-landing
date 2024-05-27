@@ -2,7 +2,7 @@ import React from 'react';
 
 function Features(props) {
    return (<>
-      <section className='features container'>
+      <section id='features' className='features container'>
          <p className='features__title'>What will you get?</p>
          <div className='features__icon-container'>
             <img className='wave' src='wave.svg'/>

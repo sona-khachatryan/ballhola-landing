@@ -233,6 +233,10 @@
     height: 20px;
 }
 
+.contact-info__socials-icon:hover {
+   cursor: pointer;
+}
+
 .contact-info__line1, .contact-info__line2 {
     display: none;
 }

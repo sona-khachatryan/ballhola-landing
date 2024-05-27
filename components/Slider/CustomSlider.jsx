@@ -148,37 +148,6 @@ function CustomSlider(props) {
                ),
             }
          },
-         // {
-         //    breakpoint: 640,
-         //    settings: {
-         //       slidesToShow: 2,
-         //       slidesToScroll: 2,
-         //       centerMode: false,
-         //       centerPadding: 0,
-         //       appendDots: dots => (
-         //          <div
-         //             style={{
-         //                display: 'flex',
-         //                justifyContent: 'center',
-         //                margin: '-10px 0',
-         //             }}
-         //          >
-         //             {dots}
-         //          </div>
-         //       ),
-         //       customPaging: i => (
-         //          <div
-         //             style={{
-         //                width: '12px',
-         //                height: '12px',
-         //                borderRadius: '50%',
-         //                backgroundColor: '#16D0B8',
-         //                transition: 'width 0.3s, height 0.3s',
-         //             }}
-         //          ></div>
-         //       ),
-         //    }
-         // },
 
          {
             breakpoint: 639,
@@ -216,7 +185,7 @@ function CustomSlider(props) {
    };
     
    return (
-      <div className='slider-main-container container'>
+      <div id='reviews' className='slider-main-container container'>
          <div className='slider__title-container container'>
             <p className='slider__title'>
                    Satisfied Users are Our best Ads!

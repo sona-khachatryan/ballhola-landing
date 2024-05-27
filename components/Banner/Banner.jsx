@@ -4,7 +4,7 @@ import React from 'react';
 
 function Banner(props) {
    return (
-      <div className='banner container'>
+      <div id='download' className='banner container'>
          <img className='banner__backdrop' src='backdrop.svg' alt='backdrop'/>
          <div className='banner__top-bg'>
             <p className='banner__title'>

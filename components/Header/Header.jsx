@@ -2,9 +2,12 @@
 
 import {useEffect, useState} from 'react';
 
-function Header(props) {
+function Header({refs}) {
 
    const [isActive, setIsActive] = useState(false);
+   const scrollToSection = (sectionRef) => {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+   };
 
    return (<>
       <header className='header container'>
@@ -13,20 +16,20 @@ function Header(props) {
          <nav>
             <ul className='header__menu'>
                <li>
-                  <a className='header__link' href='#features'>Features</a>
+                  <a className='header__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
                </li>
                <li>
-                  <a className='header__link' href='#demo'>Demonstration</a>
+                  <a className='header__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>Demonstration</a>
                </li>
                <li>
-                  <a className='header__link' href='#reviews'>Reviews</a>
+                  <a className='header__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>Reviews</a>
                </li>
                <li>
-                  <a className='header__link' href='#download'>Download</a>
+                  <a className='header__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>Download</a>
                </li>
             </ul>
          </nav>
-         <a className='header__btn' href='#contact'>Contact Us</a>
+         <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
          <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
             <div className='bar'></div>
          </button>
@@ -34,19 +37,19 @@ function Header(props) {
       <nav>
          <ul className={`mobile-nav ${isActive ? 'is-active' : ''}`}>
             <li>
-               <a href='#features'>Features</a>
+               <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
             </li>
             <li>
-               <a href='#demo'>Demonstration</a>
+               <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>Demonstration</a>
             </li>
             <li>
-               <a href='#reviews'>Reviews</a>
+               <a href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>Reviews</a>
             </li>
             <li>
-               <a href='#download'>Download</a>
+               <a href='#download' onClick={() => scrollToSection(refs.downloadRef)}>Download</a>
             </li>
             <li>
-               <a href='#contact'>Contact Us</a>
+               <a href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
             </li>
          </ul>
       </nav>

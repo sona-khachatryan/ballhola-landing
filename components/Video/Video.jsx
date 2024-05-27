@@ -4,7 +4,7 @@ import React from 'react';
 
 function Video(props) {
    return (
-      <div className='video-container container'>
+      <div id='demo' className='video-container container'>
          <p className='video-title'>The video demonstration of US</p>
          <div>
             <video className='video' controls>
