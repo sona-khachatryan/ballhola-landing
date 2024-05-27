@@ -58,7 +58,8 @@ function CustomSlider(props) {
       speed: 500,
       dots: true,
       accessibility: true,
-      arrows: false,
+      arrows: false, 
+      touchMove: true,
       appendDots: dots => (
          <div
             style={{
@@ -110,7 +111,7 @@ function CustomSlider(props) {
                         height: '16px',
                         borderRadius: '50%',
                         backgroundColor: '#16D0B8',
-                        transition: 'width 0.3s, height 0.3s',
+                        // transition: 'width 0.3s, height 0.3s',
                      }}
                   ></div>
                ),
@@ -141,7 +142,7 @@ function CustomSlider(props) {
                         height: '12px',
                         borderRadius: '50%',
                         backgroundColor: '#16D0B8',
-                        transition: 'width 0.3s, height 0.3s',
+                        // transition: 'width 0.3s, height 0.3s',
                      }}
                   ></div>
                ),
@@ -205,7 +206,7 @@ function CustomSlider(props) {
                         height: '12px',
                         borderRadius: '50%',
                         backgroundColor: '#16D0B8',
-                        transition: 'width 0.3s, height 0.3s',
+                        // transition: 'width 0.3s, height 0.3s',
                      }}
                   ></div>
                ),
