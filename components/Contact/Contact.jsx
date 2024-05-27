@@ -9,15 +9,42 @@ function Contact(props) {
    const [messageInputValue, setMessageInputValue] = useState();
 
    const [hovered, setHovered] = useState(false);
+   const [isDisabled, setIsDisabled] = useState(true);
+   const [errorMessage, setErrorMessage] = useState('');
 
    useEffect(() => {
-      console.log('hovered', hovered);
-   }, [hovered]);
+      const isValidEmail = (email) => {
+         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+         return emailRegex.test(email);
+      };
+      
+      if(!emailInputValue || isValidEmail(emailInputValue)) {
+         setErrorMessage('');
+      } else {
+         setErrorMessage('Please enter a valid email address');
+      }
+      
+   }, [emailInputValue]);
+
+   useEffect(() => {
+      if(nameInputValue && emailInputValue && messageInputValue && !errorMessage) {
+         setIsDisabled(false);
+      } else {
+         setIsDisabled(true);
+      }
+   }, [nameInputValue, emailInputValue, messageInputValue, errorMessage]);
 
    const handleSubmitClick = () => {};
-   const handleNameInputChange = () => {};
-   const handleEmailInputChange = () => {};
-   const handleMessageInputChange = () => {};
+   const handleNameInputChange = (e) => {
+      setNameInputValue(e.target.value);
+   };
+   const handleEmailInputChange = (e) => {
+      setEmailInputValue(e.target.value);
+   };
+   const handleMessageInputChange = (e) => {
+      setMessageInputValue(e.target.value);
+   };
 
    return (
       <div className='container'
@@ -86,13 +113,39 @@ function Contact(props) {
                      className='contact-form'
                   >
                      <p className='contact-form__title'>
-                         Contact Us
+                        Contact Us
                      </p>
-                     <input className='contact-form__input' placeholder='Enter your name'/>
-                     <input className='contact-form__input' placeholder='Enter a valid email address'/>
-                     <textarea className='contact-form__input contact-form__message-input'
-                        placeholder='Enter your message'/>
-                     <button className='contact-form__submit-btn'>Submit</button>
+
+                     <div>
+                        <input
+                           className='contact-form__input'
+                           placeholder='Enter your name'
+                           value={nameInputValue}
+                           onChange={handleNameInputChange}
+                        />
+                     </div>
+                     <div>
+                        <input
+                           className={`contact-form__input ${errorMessage ? 'input-error' : ''}`}
+                           placeholder='Enter a valid email address'
+                           value={emailInputValue}
+                           onChange={handleEmailInputChange}
+                        />
+                        <p className='email__error'>{errorMessage}</p>
+                     </div>
+                     <textarea
+                        className='contact-form__input contact-form__message-input'
+                        placeholder='Enter your message'
+                        value={messageInputValue}
+                        onChange={handleMessageInputChange}
+                     />
+
+                     <button
+                        className={`contact-form__submit-btn ${isDisabled ? 'disabled' : ''}`}
+                        disabled={isDisabled}
+                     >Submit
+                     </button>
+
                   </div>
                </div>
 
