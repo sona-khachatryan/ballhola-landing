@@ -16,13 +16,19 @@ function Banner(props) {
          </div>
          <div className='banner__bottom-bg'>
             <p className='banner__title-2'>
-                So what are you waiting for?
+                  So what are you waiting for?
             </p>
             <p className='banner__description-2'>
-                Choose your native platform and get started!
+                  Choose your native platform and get started!
             </p>
-            <img className='banner__appstore-logo' src='app-store-logo.svg' alt='app store'/>
-            <img className='banner__googleplay-logo' src='google-play-logo.svg' alt='google play'/>
+
+            <a href='https://apps.apple.com/am/app/ballhola/id6477875455' target="_blank" rel="noopener noreferrer">
+               <img className='banner__appstore-logo' src='app-store-logo.svg' alt='app store'/>
+            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.tesvan.ballhola&pcampaignid=web_share'
+               target="_blank" rel="noopener noreferrer">
+               <img className='banner__googleplay-logo' src='google-play-logo.svg' alt='google play'/>
+            </a>
          </div>
       </div>
    );
