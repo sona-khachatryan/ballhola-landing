@@ -120,10 +120,7 @@
     border: 1px solid #031852;
     background-color: var(--clr-light-turquoise);
     background-image: none;
-    padding: 3px 10px;
     color: #031852;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 .email__error {
@@ -509,6 +506,10 @@
         transform: translateX(0);
     }
 
+    .input-error {
+        border-color: red;
+    }
+
 }
 
 /* lg */
@@ -631,7 +632,7 @@
     .contact-section {
         margin-top: 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         padding: 0;
 
@@ -733,6 +734,10 @@
         padding: 3px 16px;
         font-size: 20px;
         align-self: flex-start;
+    }
+
+    .disabled:hover{
+        border: 3px solid #031852;
     }
 
     .contact-info-wrapper {
@@ -852,10 +857,15 @@
         border-image: none;
         border-top: 5px solid var(--clr-dark-turquoise);
         opacity: 70%;
-        left: 350px;
+        left: 370px;
         z-index: 60;
         position: absolute;
     }
+
+    .input-error {
+        border-color: red;
+    }
+
 }
 
 /* 2xl */
@@ -892,5 +902,10 @@
         top: 250px;
         right: -30px;
     }
+
+    .input-error {
+        border-color: red;
+    }
+
 
 }

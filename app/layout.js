@@ -11,6 +11,7 @@ import '../components/Slider/slider.css';
 import '../components/Banner/banner.css';
 import '../components/Contact/contact.css';
 import '../components/Footer/footer.css';
+import '../components/LngSwitcher/lngSwitcher.css';
 import './utils.css';
 
 import 'slick-carousel/slick/slick.css';

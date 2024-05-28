@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect, useState} from 'react';
+import LngSwitcher from "@/components/LngSwitcher/LngSwitcher";
 
 function Header({refs}) {
 
@@ -29,15 +30,18 @@ function Header({refs}) {
                </li>
             </ul>
          </nav>
-         <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
-         <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
-            <div className='bar'></div>
-         </button>
+         <div id='header__right'>
+            <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
+            <LngSwitcher/>
+            <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
+               <div className='bar'></div>
+            </button>
+         </div>
       </header>
       <nav>
          <ul className={`mobile-nav ${isActive ? 'is-active' : ''}`}>
             <li>
-               <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
+            <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
             </li>
             <li>
                <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>Demonstration</a>
