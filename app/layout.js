@@ -31,10 +31,12 @@ export const metadata = {
    description: '',
 };
 
-export default function RootLayout({ children }) {
+function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className={sourceSans3.className}>{children}</body>
       </html>
    );
 }
+
+export default RootLayout;

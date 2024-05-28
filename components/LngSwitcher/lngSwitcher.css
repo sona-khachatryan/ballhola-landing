@@ -1,8 +1,6 @@
 #lng-switcher-container {
     position: relative;
     width: 58px;
-
-    border: 1px solid yellow;
 }
 
 #lng-switcher-icon {
@@ -35,8 +33,6 @@
     background-color: var(--clr-dark-blue);
     opacity: 0;
     transition: 300ms ease-out;
-    border: 1px solid fuchsia;
-
     width: 58px;
     height: 118px;
     top: 27px;

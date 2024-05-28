@@ -80,7 +80,7 @@
     }
 
     .hero__text-container {
-        width: 290px;
+        width: 270px;
         height: 173px;
         margin-top: 24px;
         margin-left: 40px;
@@ -93,7 +93,6 @@
     .hero__text__1 {
         margin-top: 6px;
         display: block;
-        color: var(--clr-dark-turquoise);
         font-size: var(--size-14);
         line-height: 17.6px;
     }
@@ -115,7 +114,7 @@
     }
 
     .hero__image-container {
-        width: 500px;
+        width: 430px;
         height: 323.96px;
         margin-top: 24px;
     }
@@ -155,7 +154,7 @@
 
 @media (min-width: 768px) {
     .hero__text-container {
-        width: 317px;
+        width: 270px;
         height: 173px;
         margin-top: 24px;
         margin-left: 40px;
@@ -247,7 +246,7 @@
     }
 
     .hero__text-container {
-        width: 590px;
+        width: 550px;
         height: 334px;
         /*margin-top: 84px;*/
         margin-left: 80px;
@@ -277,7 +276,7 @@
     .hero__image-container {
         width: 699.64px;
         height: 531.87px;
-        margin-top: 0;
+        margin-top: 25px;
         /*margin-left: 3px;*/
     }
 
@@ -321,7 +320,7 @@
     }
 
     .hero__text-container {
-        width: 675px;
+        width: 655px;
         height: 334px;
         margin-left: 80px;
     }

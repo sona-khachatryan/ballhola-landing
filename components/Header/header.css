@@ -62,7 +62,7 @@
 }
 
 .hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-7px, 3px);
+    transform: rotate(-45deg) translate(-6px, 4px);
 }
 .hamburger.is-active:after {
     transform: rotate(45deg) translate(-6px, -4px);
