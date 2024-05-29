@@ -1,9 +1,11 @@
 'use client';
 
 import React, {useState} from 'react';
+import {useRouter} from 'next/navigation';
 
 function LngSwitcher(props) {
    const [isActive, setIsActive] = useState(false);
+   const router = useRouter();
     
    return (
       <div id='lng-switcher-container'>
@@ -12,9 +14,9 @@ function LngSwitcher(props) {
             <img id='lng-arrow' src='arrow.svg' className={`${isActive ? 'is-active' : ''}`}/>
          </div>
          <div id='lng-dropdown' className={`${isActive ? 'is-active' : ''}`}>
-            <p className='lng-options'>Eng</p>
-            <p className='lng-options'>Arm</p>
-            <p className='lng-options'>Rus</p>
+            <p className='lng-options' onClick={() => router.push('/en')}>Eng</p>
+            <p className='lng-options' onClick={() => router.push('/hy')}>Arm</p>
+            <p className='lng-options' onClick={() => router.push('/ru')}>Rus</p>
          </div>
       </div>
    );

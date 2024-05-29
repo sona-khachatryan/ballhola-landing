@@ -1,12 +1,15 @@
-import React from 'react';
-import {useRouter} from "next/router";
+import React, {useContext} from 'react';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Hero(props) {
+   const dict = useContext(LangContext);
 
    return (<>
       <section className='hero container'>
          <div className='hero__text-container'>
-            <div className='hero__text__1'>Discover all about Football with US</div>
+            <div className='hero__text__1'>
+               {dict.hero.discover}
+            </div>
             <div className='hero__text__2'>
                 Our <span>football app</span> connects <br/> players for
                 exciting <br/> <span>matches.</span>

@@ -2,7 +2,7 @@
 
 import React, {useEffect, useState} from 'react';
 
-function Contact(props) {
+function Contact({page}) {
 
    const [nameInputValue, setNameInputValue] = useState();
    const [emailInputValue, setEmailInputValue] = useState();
@@ -115,7 +115,7 @@ function Contact(props) {
                      className='contact-form'
                   >
                      <p className='contact-form__title'>
-                        Contact Us
+                        {page?.contact?.form}
                      </p>
 
                      <div>

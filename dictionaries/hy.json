@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "features": "Features",
+    "demo": "Demonstration",
+    "reviews": "Reviews",
+    "download": "Download",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "discover": "Բացահայտեք ամեն ինչ ֆուտբոլի մասին Մեզ հետ",
+    "our": "Our",
+    "app": "football app",
+    "connects": "connects",
+    "players": "players for exciting",
+    "matches": "matches",
+    "welcome": "Welcome to the ultimate football experience at BallHola!",
+    "ready": "Ready to play? Let's start."
+  },
+  "video": {
+    "videoTitle": "The video demonstration of US"
+  },
+  "features": {
+    "featuresTitle": "What will you get?",
+    "chat": "Chat with players",
+    "game": "Create a game",
+    "stadiums": "Find nearby stadiums",
+    "invitation": "Receive an invitation"
+  },
+  "banner": {
+    "bannerTitle1": "Life is all about Sport",
+    "bannerDescription1": "Find out about BallHola, a great way of staying on top of your favourite sport events!",
+    "bannerTitle2": "So what are you waiting for?",
+    "bannerDescription2": "Choose your native platform and get started!"
+  },
+  "contact": {
+    "info": "Contact information",
+    "call": "Give Us a Call",
+    "message": "Send Us a Message",
+    "sm": "Social Media",
+    "form": "Կապ մեզ հետ",
+    "namePlaceholder": "Մուտքագրեք Ձեր անունը",
+    "emailPlaceholder": "Մուտքագրեք վավեր էլ. փոստի հասցե",
+    "messagePlaceholder": "Enter your message",
+    "submit": "Ուղարկել"
+  }
+}
