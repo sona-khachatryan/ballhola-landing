@@ -16,19 +16,23 @@ function getLocale(request) {
 
 export function middleware(request) {
    const pathname = request.nextUrl.pathname;
-   const pathnameIsMissingLocale = i18n.locales.every(
-      locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-   );
+   const isImageRequest = /\.(jpg|jpeg|png|gif|svg)$/i.test(pathname); // Check if the request is for an image
 
-   // Redirect if there is no locale
-   if (pathnameIsMissingLocale) {
-      const locale = getLocale(request);
-      return NextResponse.redirect(
-         new URL(
-            `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
-            request.url
-         )
+   // Redirect if there is no locale and the request is not for an image
+   if (!isImageRequest) {
+      const pathnameIsMissingLocale = i18n.locales.every(
+         locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
       );
+
+      if (pathnameIsMissingLocale) {
+         const locale = getLocale(request);
+         return NextResponse.redirect(
+            new URL(
+               `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+               request.url
+            )
+         );
+      }
    }
 }
 

@@ -5,10 +5,7 @@ async function Home({ params: { lang } }) {
    const dict = await getDictionary(lang);
 
    return (
-      <div>
-         {dict.contact.form}
-         <LandingPage dict={dict}/>
-      </div>
+      <LandingPage dict={dict}/>
    )
    ;
 }
