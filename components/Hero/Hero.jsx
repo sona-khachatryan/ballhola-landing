@@ -1,8 +1,12 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Hero(props) {
    const dict = useContext(LangContext);
+
+   useEffect(() => {
+      console.log(dict)
+   }, [dict]);
 
    return (<>
       <section className='hero container'>
@@ -12,7 +16,7 @@ function Hero(props) {
             </div>
             <div className='hero__text__2'>
                {dict.hero.our} <span>{dict.hero.app}</span> {dict.hero.connects} <br/>
-               {dict.hero.players} <br/> <span>  {dict.hero.matches}</span>
+               {dict.hero.players} <span> {dict.hero.matches}</span>
             </div>
             <div className='hero__text__3'>
                {dict.hero.welcome}

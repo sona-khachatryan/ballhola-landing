@@ -19,6 +19,10 @@
     position: absolute;
     top: 301.95px;
     margin-left: 20px;
+
+    width: 284px;
+
+    /*border: 1px solid honeydew;*/
 }
 
 .hero__image-container {
@@ -28,6 +32,8 @@
     height: 281.95px;
     margin-top: 20px;
     margin-left: 3px;
+
+    /*border: 1px solid palegoldenrod;*/
 }
 
 .hero__player-image {
@@ -36,6 +42,8 @@
     /*margin-left: 301.88px;*/
     rotateY: -180deg;
     z-index: 10;
+
+    /*border: 1px solid yellowgreen;*/
 }
 
 .hero__phone-image {
@@ -45,8 +53,8 @@
     z-index: 8;
     top: 8.87px;
     left: 135.72px;
-    /*margin-top: 28.87px;*/
-    /*margin-left: 135.72px;*/
+
+    /*border: 1px solid peachpuff;*/
 }
 
 .hero__googleplay-logo {
@@ -80,14 +88,17 @@
     }
 
     .hero__text-container {
-        width: 270px;
+        width: 280px;
         height: 173px;
         margin-top: 24px;
-        margin-left: 40px;
+        margin-left: 33px;
         position: relative;
         display: flex;
         flex-direction: column;
         z-index: 15;
+
+
+        /*border: 1px solid plum;*/
     }
 
     .hero__text__1 {
@@ -103,6 +114,7 @@
         top: 5px;
         margin-left: 0;
         display: block;
+        width: inherit;
     }
 
     .hero__text__3 {
@@ -136,7 +148,7 @@
         height: 26px;
         position: absolute;
         top: 213px;
-        left: 40px;
+        left: 33px;
     }
 
     .hero__googleplay-logo {
@@ -154,7 +166,7 @@
 
 @media (min-width: 768px) {
     .hero__text-container {
-        width: 270px;
+        width: 278px;
         height: 173px;
         margin-top: 24px;
         margin-left: 40px;
@@ -167,7 +179,6 @@
     .hero__player-image {
         width: 334.23px;
         height: 244.72px;
-        /*margin-left: 301.88px;*/
     }
 
     .hero__phone-image {
@@ -177,8 +188,10 @@
         z-index: 8;
         top: 10.2px;
         left: -188px;
-        /*margin-top: 28.87px;*/
-        /*margin-left: 135.72px;*/
+    }
+
+    .hero__appstore-logo {
+        left: 40px;
     }
 }
 
@@ -254,7 +267,7 @@
 
     .hero__text__1 {
         /*margin-top: 6px;*/
-        font-size: var(--size-32);
+        font-size: var(--size-24);
         line-height: 40.22px;
     }
 
@@ -262,8 +275,8 @@
     .hero__text__2 {
         top: 10px;
         margin-left: 0;
-        font-size: var(--size-48);
-        line-height: 67.88px;
+        font-size: var(--size-36);
+        line-height: 40px;
     }
 
     .hero__text__3 {
@@ -300,14 +313,14 @@
     .hero__appstore-logo {
         width: 165px;
         height: 57px;
-        top: 388px;
+        top: 288px;
         left: 80px;
     }
 
     .hero__googleplay-logo {
         width: 178px;
         height: 57px;
-        top: 388px;
+        top: 288px;
         left: 277px;
     }
 }
@@ -316,7 +329,7 @@
 
 @media (min-width: 1440px) {
     .hero {
-        top: 142px;
+        top: 100px;
     }
 
     .hero__text-container {
@@ -356,6 +369,20 @@
         height: 478.05px;
         top: 20.2px;
         left: -300px;
+    }
+
+    .hero__appstore-logo {
+        width: 165px;
+        height: 57px;
+        top: 388px;
+        left: 80px;
+    }
+
+    .hero__googleplay-logo {
+        width: 178px;
+        height: 57px;
+        top: 388px;
+        left: 277px;
     }
 }
 
