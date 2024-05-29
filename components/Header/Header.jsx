@@ -1,9 +1,12 @@
 'use client';
 
-import {useEffect, useState} from 'react';
-import LngSwitcher from "@/components/LngSwitcher/LngSwitcher";
+import {useContext, useState} from 'react';
+import LngSwitcher from '@/components/LngSwitcher/LngSwitcher';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Header({refs}) {
+
+   const dict = useContext(LangContext);
 
    const [isActive, setIsActive] = useState(false);
    const scrollToSection = (sectionRef) => {
@@ -17,21 +20,21 @@ function Header({refs}) {
          <nav>
             <ul className='header__menu'>
                <li>
-                  <a className='header__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
+                  <a className='header__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
                </li>
                <li>
-                  <a className='header__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>Demonstration</a>
+                  <a className='header__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>
                </li>
                <li>
-                  <a className='header__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>Reviews</a>
+                  <a className='header__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
                </li>
                <li>
-                  <a className='header__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>Download</a>
+                  <a className='header__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>{dict.nav.download}</a>
                </li>
             </ul>
          </nav>
          <div id='header__right'>
-            <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
+            <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>
             <LngSwitcher/>
             <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
                <div className='bar'></div>
@@ -41,19 +44,19 @@ function Header({refs}) {
       <nav>
          <ul className={`mobile-nav ${isActive ? 'is-active' : ''}`}>
             <li>
-            <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
+               <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
             </li>
             <li>
-               <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>Demonstration</a>
+               <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>
             </li>
             <li>
-               <a href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>Reviews</a>
+               <a href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
             </li>
             <li>
-               <a href='#download' onClick={() => scrollToSection(refs.downloadRef)}>Download</a>
+               <a href='#download' onClick={() => scrollToSection(refs.downloadRef)}>{dict.nav.download}</a>
             </li>
             <li>
-               <a href='#contact' onClick={() => scrollToSection(refs.contactRef)}>Contact Us</a>
+               <a href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>
             </li>
          </ul>
       </nav>

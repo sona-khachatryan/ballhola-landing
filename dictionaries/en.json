@@ -24,7 +24,10 @@
     "chat": "Chat with players",
     "game": "Create a game",
     "stadiums": "Find nearby stadiums",
-    "invitation": "Receive an invitation"
+    "invitation": "Receive invitations"
+  },
+  "reviews": {
+    "title": "Satisfied Users are Our best Ads!"
   },
   "banner": {
     "bannerTitle1": "Life is all about Sport",
@@ -34,13 +37,18 @@
   },
   "contact": {
     "info": "Contact information",
-    "call": "Give Us a Call",
+    "phonenumber": "Give Us a Call",
     "message": "Send Us a Message",
     "sm": "Social Media",
     "form": "Contact Us",
     "namePlaceholder": "Enter your name",
     "emailPlaceholder": "Enter a valid email address",
     "messagePlaceholder": "Enter your message",
-    "submit": "Submit"
+    "submit": "Submit",
+    "invalidEmail": "Please enter a valid email address",
+    "toaster": "Sent"
+  },
+  "footer": {
+    "rights": "© 2024 BallHola All rights reserved"
   }
 }

@@ -1,8 +1,11 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
-function Contact({page}) {
+function Contact() {
+
+   const dict = useContext(LangContext);
 
    const [nameInputValue, setNameInputValue] = useState();
    const [emailInputValue, setEmailInputValue] = useState();
@@ -22,7 +25,7 @@ function Contact({page}) {
       if(!emailInputValue || isValidEmail(emailInputValue)) {
          setErrorMessage('');
       } else {
-         setErrorMessage('Please enter a valid email address');
+         setErrorMessage(dict.contact.invalidEmail);
       }
       
    }, [emailInputValue]);
@@ -61,14 +64,14 @@ function Contact({page}) {
                <div className='contact-info-wrapper'>
                   <div className='contact-info'>
                      <div className='contact-info__section-title'>
-                         Contact information
+                        {dict.contact.info}
                      </div>
                      <div className="contact-info__section-wrapper">
                         <div className='contact-info__section'>
                            <img className='contact-info__phone-icon' src='phone-vector.svg' alt='phone'/>
                            <div className='contact-info__text'>
                               <p className='contact-info__title'>
-                                  Give Us a Call
+                                 {dict.contact.phonenumber}
                               </p>
                               <p className='contact-info__sub'>
                                   + (374) 99-99-99
@@ -84,7 +87,7 @@ function Contact({page}) {
                            <img className='contact-info__message-icon' src='message.svg' alt='message'/>
                            <div className='contact-info__text'>
                               <p className='contact-info__title'>
-                                  Send Us a Message
+                                 {dict.contact.message}
                               </p>
                               <p className='contact-info__sub'>
                                   contanct@ballhola.app
@@ -97,7 +100,9 @@ function Contact({page}) {
 
                      <div className="contact-info__section-wrapper">
                         <div className='contact-info__section socials-section'>
-                           <p className='contact-info__title'>Social Media</p>
+                           <p className='contact-info__title'>
+                              {dict.contact.sm}
+                           </p>
                            <div className='contact-info__socials'>
                               <img className='contact-info__socials-icon' src='instagram.svg' alt='instagram'/>
                               <img className='contact-info__socials-icon' src='facebook.svg' alt='facebook'/>
@@ -115,13 +120,13 @@ function Contact({page}) {
                      className='contact-form'
                   >
                      <p className='contact-form__title'>
-                        {page?.contact?.form}
+                        {dict.contact.form}
                      </p>
 
                      <div>
                         <input
                            className='contact-form__input'
-                           placeholder='Enter your name'
+                           placeholder={dict.contact.namePlaceholder}
                            value={nameInputValue}
                            onChange={handleNameInputChange}
                         />
@@ -129,7 +134,7 @@ function Contact({page}) {
                      <div>
                         <input
                            className={`contact-form__input ${errorMessage ? 'input-error' : ''}`}
-                           placeholder='Enter a valid email address'
+                           placeholder={dict.contact.emailPlaceholder}
                            value={emailInputValue}
                            onChange={handleEmailInputChange}
                         />
@@ -137,7 +142,7 @@ function Contact({page}) {
                      </div>
                      <textarea
                         className='contact-form__input contact-form__message-input'
-                        placeholder='Enter your message'
+                        placeholder={dict.contact.messagePlaceholder}
                         value={messageInputValue}
                         onChange={handleMessageInputChange}
                      />
@@ -145,14 +150,14 @@ function Contact({page}) {
                      <button
                         className={`contact-form__submit-btn ${isDisabled ? 'disabled' : ''}`}
                         disabled={isDisabled}
-                     >Submit
+                     >{dict.contact.submit}
                      </button>
 
                   </div>
                </div>
 
 
-               <div className='contact-info__toast'></div>
+               {/*<div className='contact-info__toast'>{dict.contact.toaster}</div>*/}
             </div>
          </div>
          <img id='ball1' src='ball1.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>

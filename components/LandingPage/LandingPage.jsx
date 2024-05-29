@@ -49,7 +49,7 @@ export default function LandingPage({dict}) {
                <Banner />
             </div>
             <div ref={contactRef}>
-               <Contact page={dict}/>
+               <Contact />
             </div>
             <Footer refs={refs}/>
          </main>

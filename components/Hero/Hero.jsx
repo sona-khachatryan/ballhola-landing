@@ -11,13 +11,13 @@ function Hero(props) {
                {dict.hero.discover}
             </div>
             <div className='hero__text__2'>
-                Our <span>football app</span> connects <br/> players for
-                exciting <br/> <span>matches.</span>
+               {dict.hero.our} <span>{dict.hero.app}</span> {dict.hero.connects} <br/>
+               {dict.hero.players} <br/> <span>  {dict.hero.matches}</span>
             </div>
             <div className='hero__text__3'>
-                Welcome to the ultimate football experience at BallHola!
+               {dict.hero.welcome}
                <br/>
-                Ready to play? Let's start.
+               {dict.hero.ready}
             </div>
          </div>
          <div className='hero__image-container '>

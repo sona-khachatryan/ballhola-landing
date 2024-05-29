@@ -1,46 +1,54 @@
 {
   "nav": {
-    "features": "Features",
-    "demo": "Demonstration",
-    "reviews": "Reviews",
-    "download": "Download",
-    "contact": "Contact Us"
+    "features": "Հնարավորություններ",
+    "demo": "Մենք",
+    "reviews": "Կարծիքներ",
+    "download": "Ներբեռնել",
+    "contact": "Կապ"
   },
   "hero": {
-    "discover": "Բացահայտեք ամեն ինչ ֆուտբոլի մասին Մեզ հետ",
-    "our": "Our",
-    "app": "football app",
-    "connects": "connects",
-    "players": "players for exciting",
-    "matches": "matches",
-    "welcome": "Welcome to the ultimate football experience at BallHola!",
-    "ready": "Ready to play? Let's start."
+    "discover": "Բացահայտիր ֆուտբուլի աշխարհը մեզ հետ",
+    "our": "Մեր",
+    "app": "հավելվածը",
+    "connects": "միավորում է",
+    "players": "ֆուտբոլասերներին",
+    "matches": "թեժ խաղերի շուրջ",
+    "welcome": "Զգա՛ ֆուտբոլի ամբողջ ուժը BallHola-ի հետ:",
+    "ready": "Պտրա՞ստ ես խաղին: Դե՛, սկսեցինք:"
   },
   "video": {
-    "videoTitle": "The video demonstration of US"
+    "videoTitle": "Մենք"
   },
   "features": {
-    "featuresTitle": "What will you get?",
-    "chat": "Chat with players",
-    "game": "Create a game",
-    "stadiums": "Find nearby stadiums",
-    "invitation": "Receive an invitation"
+    "featuresTitle": "BallHola-ի հետ",
+    "chat": "Շփվիր խաղընկերներիդ հետ",
+    "game": "Ստեղծիր նոր խաղեր",
+    "stadiums": "Գտիր մոտակա խաղադաշտերը",
+    "invitation": "Ստացիր խաղի հրավերներ"
+  },
+  "reviews": {
+    "title": "Օգտատերերի կարծիքները մեր լավագույն գովազդն են"
   },
   "banner": {
-    "bannerTitle1": "Life is all about Sport",
-    "bannerDescription1": "Find out about BallHola, a great way of staying on top of your favourite sport events!",
-    "bannerTitle2": "So what are you waiting for?",
-    "bannerDescription2": "Choose your native platform and get started!"
+    "bannerTitle1": "Սպորտը կյանք է:",
+    "bannerDescription1": "Հետ մի մնա քո սիրելի սպորտային իրադարձություններից: Ներբեռնիր BallHola-ն:",
+    "bannerTitle2": "Դե՛, ինչի՞ն ես սպասում:",
+    "bannerDescription2": "Անցիր նախընտրածդ հարթակը, ու սկսենք:"
   },
   "contact": {
-    "info": "Contact information",
-    "call": "Give Us a Call",
-    "message": "Send Us a Message",
-    "sm": "Social Media",
+    "info": "Մեր կոնտակտային տվյալները",
+    "phonenumber": "Հեռ.",
+    "message": "Էլ. փոստ",
+    "sm": "Սոց. ցանցեր",
     "form": "Կապ մեզ հետ",
-    "namePlaceholder": "Մուտքագրեք Ձեր անունը",
-    "emailPlaceholder": "Մուտքագրեք վավեր էլ. փոստի հասցե",
-    "messagePlaceholder": "Enter your message",
-    "submit": "Ուղարկել"
+    "namePlaceholder": "Անուն Ազգանուն",
+    "emailPlaceholder": "Էլեկտրոնային փոստի հասցե",
+    "messagePlaceholder": "Հաղորդագրություն",
+    "submit": "Ուղարկել",
+    "invalidEmail": "Մուտքագրեք վավեր էլ. հասցե",
+    "toaster": "Ուղարկված է"
+  },
+  "footer": {
+    "rights": "© 2024 BallHola բոլոր իրավունքները պաշտպանված են"
   }
 }

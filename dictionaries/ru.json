@@ -1,46 +1,54 @@
 {
   "nav": {
-    "features": "Features",
-    "demo": "Demonstration",
-    "reviews": "Reviews",
-    "download": "Download",
-    "contact": "Contact Us"
+    "features": "Возможности",
+    "demo": "О Нас",
+    "reviews": "Отзывы",
+    "download": "Скачать",
+    "contact": "Связь"
   },
   "hero": {
-    "discover": "Узнайте все о футболе вместе с нами",
-    "our": "Our",
-    "app": "football app",
-    "connects": "connects",
-    "players": "players for exciting",
-    "matches": "matches",
-    "welcome": "Welcome to the ultimate football experience at BallHola!",
-    "ready": "Ready to play? Let's start."
+    "discover": "Узнавайте все о футболе вместе с нами",
+    "our": "Наше",
+    "app": "приложение",
+    "connects": "объединяет",
+    "players": "игроков вокруг",
+    "matches": "захватывающих матчей",
+    "welcome": "Получайте незабываемые ощущения от футбола с BallHola!",
+    "ready": "Готовы играть? Давайте начнем."
   },
   "video": {
-    "videoTitle": "The video demonstration of US"
+    "videoTitle": "О Нас"
   },
   "features": {
-    "featuresTitle": "What will you get?",
-    "chat": "Chat with players",
-    "game": "Create a game",
-    "stadiums": "Find nearby stadiums",
-    "invitation": "Receive an invitation"
+    "featuresTitle": "С BallHola можно",
+    "chat": "Общаться с игроками",
+    "game": "Создать новый матч",
+    "stadiums": "Найти ближайшие стадионы",
+    "invitation": "Получать приглашения"
+  },
+  "reviews": {
+    "title": "Довольные пользователи — наша лучшая реклама!"
   },
   "banner": {
-    "bannerTitle1": "Life is all about Sport",
-    "bannerDescription1": "Find out about BallHola, a great way of staying on top of your favourite sport events!",
-    "bannerTitle2": "So what are you waiting for?",
-    "bannerDescription2": "Choose your native platform and get started!"
+    "bannerTitle1": "Спорт - это жизнь",
+    "bannerDescription1": "BallHola - отличный способ оставаться в курсе любимых спортивных событий!",
+    "bannerTitle2": "И так, чего вы ждёте?",
+    "bannerDescription2": "Выберите подходящую платформу и вперёд!"
   },
   "contact": {
-    "info": "Contact information",
-    "call": "Give Us a Call",
-    "message": "Send Us a Message",
-    "sm": "Social Media",
-    "form": "Contact Us",
-    "namePlaceholder": "Enter your name",
-    "emailPlaceholder": "Enter a valid email address",
-    "messagePlaceholder": "Enter your message",
-    "submit": "Submit"
+    "info": "Контактная информация",
+    "phonenumber": "Тел.",
+    "message": "Эл. почта",
+    "sm": "Соц. сети",
+    "form": "Свяжитесь с нами",
+    "namePlaceholder": "ИФО",
+    "emailPlaceholder": "Эл. почта",
+    "messagePlaceholder": "Ваше сообшение",
+    "submit": "Отправить",
+    "invalidEmail": "Введите действующий эл. адресс",
+    "toaster": "Отправлено"
+  },
+  "footer": {
+    "rights": "© 2024 BallHola. Все права защищены."
   }
 }
