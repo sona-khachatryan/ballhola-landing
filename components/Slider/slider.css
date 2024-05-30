@@ -42,7 +42,7 @@
     font-size: var(--size-24);
     line-height: 30px;
     font-weight: 700;
-
+    text-align: center;
 }
 
 .slider__card-image {

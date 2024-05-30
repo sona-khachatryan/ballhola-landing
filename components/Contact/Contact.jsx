@@ -15,6 +15,8 @@ function Contact() {
    const [isDisabled, setIsDisabled] = useState(true);
    const [errorMessage, setErrorMessage] = useState('');
 
+   const [messageIsSent, setMessageIsSent] = useState(false);
+
    useEffect(() => {
       const isValidEmail = (email) => {
          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -38,7 +40,25 @@ function Contact() {
       }
    }, [nameInputValue, emailInputValue, messageInputValue, errorMessage]);
 
-   const handleSubmitClick = () => {};
+   useEffect(() => {
+      let timeoutId;
+      if(messageIsSent) {
+         timeoutId = setTimeout(() => setMessageIsSent(false), 2000);
+      }
+
+      console.log(messageIsSent);
+
+      return () => {
+         clearTimeout(timeoutId);
+      };
+   }, [messageIsSent]);
+   const handleSubmitClick = () => {
+
+      setMessageIsSent(true);
+      setNameInputValue('');
+      setMessageInputValue('');
+      setEmailInputValue('');
+   };
    const handleNameInputChange = (e) => {
       setNameInputValue(e.target.value);
    };
@@ -74,7 +94,7 @@ function Contact() {
                                  {dict.contact.phonenumber}
                               </p>
                               <p className='contact-info__sub'>
-                                  + (374) 99-99-99
+                                  +(374) 98 02-67-19
                               </p>
                            </div>
                         </div>
@@ -150,6 +170,7 @@ function Contact() {
                      <button
                         className={`contact-form__submit-btn ${isDisabled ? 'disabled' : ''}`}
                         disabled={isDisabled}
+                        onClick={handleSubmitClick}
                      >{dict.contact.submit}
                      </button>
 
@@ -157,7 +178,9 @@ function Contact() {
                </div>
 
 
-               {/*<div className='contact-info__toast'>{dict.contact.toaster}</div>*/}
+               <div className={`${messageIsSent ? 'contact-form__toast' : 'invisible' }`}>{dict.contact.toaster}</div>
+
+
             </div>
          </div>
          <img id='ball1' src='ball1.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>

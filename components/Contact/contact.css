@@ -246,6 +246,27 @@
     display: none;
 }
 
+.invisible {
+    opacity: 0;
+    display: none;
+}
+
+.contact-form__toast {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    z-index: 99999;
+    width: fit-content;
+    height: 32px;
+    border-radius: 4px;
+    padding: 5px 30px;
+    background: #7A7A7A91;
+    justify-content: center;
+    align-items: center;
+    opacity: 100;
+    transition: opacity 500ms ease-out;
+}
+
 @media (min-width: 390px) {}
 
 /* xs */
@@ -865,6 +886,21 @@
     .input-error {
         border-color: red;
     }
+
+    .contact-form__toast {
+        width: fit-content;
+        height: 40px;
+        border-radius: 4px;
+        padding: 5px 40px;
+        left: 250px;
+        bottom: 40px;
+        font-size: 18px;
+
+
+        opacity: 100;
+        transition: opacity 500ms ease-out;
+    }
+
 
 }
 

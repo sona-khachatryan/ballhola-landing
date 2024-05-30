@@ -83,17 +83,18 @@
 }
 
 .features__icon-text-group {
-    height: 108px;
+    height: 130px;
     width: 166px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     position: relative;
 }
 
 .features__icon-description {
     font-size: var(--size-16);
-    line-height: 25px;
+    line-height: 20px;
     font-weight: 300;
     text-align: center;
 }
@@ -177,7 +178,7 @@
     }
 
     .features__icon-text-group {
-        height: 118px;
+        height: 128px;
         width: 166px;
         display: flex;
         flex-direction: column;
@@ -188,7 +189,7 @@
 
     .features__icon-description {
         font-size: var(--size-15);
-        line-height: 22px;
+        line-height: 20px;
     }
 }
 
@@ -273,14 +274,14 @@
     }
 
     .features__icon-text-group {
-        height: fit-content;
+        height: 230px;
         width: 256px;
         display: flex;
     }
 
     .features__icon-description {
         font-size: var(--size-24);
-        line-height: 40px;
+        line-height: 30px;
     }
 }
 

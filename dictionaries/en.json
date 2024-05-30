@@ -46,7 +46,7 @@
     "messagePlaceholder": "Enter your message",
     "submit": "Submit",
     "invalidEmail": "Please enter a valid email address",
-    "toaster": "Sent"
+    "toaster": "Submitted"
   },
   "footer": {
     "rights": "© 2024 BallHola All rights reserved"
