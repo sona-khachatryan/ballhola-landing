@@ -1,25 +1,29 @@
 'use client';
 
-import React from 'react';
+import React, {useContext} from 'react';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Banner(props) {
+
+   const dict = useContext(LangContext);
+    
    return (
       <div id='download' className='banner container'>
          <img className='banner__backdrop' src='backdrop.svg' alt='backdrop'/>
          <div className='banner__top-bg'>
             <p className='banner__title'>
-                Life is all about Sport
+               {dict.banner.bannerTitle1}
             </p>
             <p className='banner__description'>
-                Find out about BallHola, a great way of staying on top of your favourite sport events!
+               {dict.banner.bannerDescription1}
             </p>
          </div>
          <div className='banner__bottom-bg'>
             <p className='banner__title-2'>
-                  So what are you waiting for?
+               {dict.banner.bannerTitle2}
             </p>
             <p className='banner__description-2'>
-                  Choose your native platform and get started!
+               {dict.banner.bannerDescription2}
             </p>
 
             <a href='https://apps.apple.com/am/app/ballhola/id6477875455' target="_blank" rel="noopener noreferrer">

@@ -1,20 +1,27 @@
-import React from 'react';
-import {useRouter} from "next/router";
+import React, {useContext, useEffect} from 'react';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Hero(props) {
+   const dict = useContext(LangContext);
+
+   useEffect(() => {
+      console.log(dict)
+   }, [dict]);
 
    return (<>
       <section className='hero container'>
          <div className='hero__text-container'>
-            <div className='hero__text__1'>Discover all about Football with US</div>
+            <div className='hero__text__1'>
+               {dict.hero.discover}
+            </div>
             <div className='hero__text__2'>
-                Our <span>football app</span> connects <br/> players for
-                exciting <br/> <span>matches.</span>
+               {dict.hero.our} <span>{dict.hero.app}</span> {dict.hero.connects} <br/>
+               {dict.hero.players} <span> {dict.hero.matches}</span>
             </div>
             <div className='hero__text__3'>
-                Welcome to the ultimate football experience at BallHola!
+               {dict.hero.welcome}
                <br/>
-                Ready to play? Let's start.
+               {dict.hero.ready}
             </div>
          </div>
          <div className='hero__image-container '>

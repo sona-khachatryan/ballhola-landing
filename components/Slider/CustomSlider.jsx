@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import {useContext} from 'react';
 import Slider from 'react-slick';
 import CustomSlide from '@/components/Slider/CustomSlide';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 const reviewDataMockup = [
    {
@@ -49,6 +50,8 @@ const reviewDataMockup = [
    },
 ];
 function CustomSlider(props) {
+
+   const dict = useContext(LangContext);
 
    const settings = {
       infinite: true,
@@ -188,7 +191,7 @@ function CustomSlider(props) {
       <div id='reviews' className='slider-main-container container'>
          <div className='slider__title-container container'>
             <p className='slider__title'>
-                   Satisfied Users are Our best Ads!
+               {dict.reviews.title}
             </p>
          </div>
 

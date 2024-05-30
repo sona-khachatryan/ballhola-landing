@@ -1,11 +1,14 @@
 'use client';
 
-import React from 'react';
+import {useContext} from 'react';
+import {LangContext} from '@/components/LandingPage/LandingPage';
 
 function Video(props) {
+   const dict = useContext(LangContext);
+    
    return (
       <div id='demo' className='video-container container'>
-         <p className='video-title'>The video demonstration of US</p>
+         <p className='video-title'>{dict.video.videoTitle}</p>
          <div>
             <video className='video' controls>
                <source src='' type=''/>

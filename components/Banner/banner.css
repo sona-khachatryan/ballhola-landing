@@ -20,10 +20,11 @@
 }
 
 .banner__backdrop {
-    height: 212px;
+    height: inherit;
     width: 100%;
     margin-top: 20px;
     position: relative;
+    object-fit: cover;
 }
 
 .banner__top-bg {
@@ -111,6 +112,15 @@
 /* sm */
 
 @media (min-width: 640px) {
+
+    .banner {
+        height: 250px;
+    }
+
+    .banner__backdrop {
+        height: 250px;
+        width: 100%;
+    }
 
 }
 
@@ -283,7 +293,7 @@
     }
 
     .banner__top-bg {
-        width: 768px;
+        width: 808px;
         height: 207px;
         top: 60px;
     }
@@ -296,7 +306,7 @@
     }
 
     .banner__title {
-        margin-left: 96px;
+        margin-left: 80px;
     }
 
     .banner__title-2 {
@@ -310,8 +320,8 @@
     }
 
     .banner__description {
-        margin-left: 96px;
-        width: 643px;
+        margin-left: 80px;
+        width: 700px;
     }
 
     .banner__description-2 {
@@ -319,7 +329,7 @@
     }
 
     .banner__bottom-bg {
-        width: 768px;
+        width: 808px;
         height: 233px;
         top: 320px;
     }
