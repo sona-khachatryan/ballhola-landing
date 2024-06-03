@@ -2,6 +2,7 @@
 
 import React, {useContext, useEffect, useState} from 'react';
 import {LangContext} from '@/components/LandingPage/LandingPage';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
@@ -52,12 +53,27 @@ function Contact() {
          clearTimeout(timeoutId);
       };
    }, [messageIsSent]);
-   const handleSubmitClick = () => {
 
-      setMessageIsSent(true);
-      setNameInputValue('');
-      setMessageInputValue('');
-      setEmailInputValue('');
+   const handleSubmitClick = (e) => {
+
+      e.preventDefault();
+
+      emailjs
+         .send('service_q1wwyb9', 'template_hphruvd', {
+            from_name: nameInputValue,
+            message: messageInputValue,
+            reply_to: emailInputValue,
+         }, {publicKey: 'Y1JiB3w3CaU2sM5HH'})
+         .then(response => {
+            console.log('SUCCESS!', response.status, response.text);
+            setMessageIsSent(true);
+            setNameInputValue('');
+            setMessageInputValue('');
+            setEmailInputValue('');
+         })
+         .catch(err => {
+            console.log('FAILED...', err);
+         });
    };
    const handleNameInputChange = (e) => {
       setNameInputValue(e.target.value);
