@@ -4,6 +4,7 @@ import {useContext} from 'react';
 import Slider from 'react-slick';
 import CustomSlide from '@/components/Slider/CustomSlide';
 import {LangContext} from '@/components/LandingPage/LandingPage';
+import {reviews} from '@/lib/reviews';
 
 const reviewDataMockup = [
    {
@@ -159,7 +160,7 @@ function CustomSlider(props) {
                slidesToShow: 1,
                slidesToScroll: 1,
                centerMode: true,
-               centerPadding: '100px',
+               centerPadding: '95px',
                appendDots: dots => (
                   <div
                      style={{
@@ -199,7 +200,7 @@ function CustomSlider(props) {
             <div className='slider__decor-1'>,,</div>
             <div className='slider__decor-2'>,,</div>
             <Slider {...settings}>
-               {reviewDataMockup.map((user, index) =>
+               {reviews.map((user, index) =>
                   <CustomSlide key={index} user={user}/>
                )}
             </Slider>

@@ -26,12 +26,13 @@
 
 .slider__card-user-info {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
 }
 
 .slider__card {
-    width: 180px;
-    height: 180px;
+    width: 189px;
+    height: 200px;
     border-radius: 24px;
     background-color: var(--clr-light);
     padding-top: 15px;
@@ -128,15 +129,16 @@
 
     .slider__card-user-info {
         display: flex;
-        gap: 20px;
+        gap: 15px;
+        align-items: center;
     }
 
     .slider__card {
         width: 314px;
-        height: 278px;
+        height: 294px;
         border-radius: 40px;
 
-        padding-top: 30px;
+        padding-top: 20px;
         padding-left: 20px;
     }
 
@@ -162,7 +164,7 @@
     }
 
     .slider__card-review {
-        width: 291px;
+        width: 280px;
         height: 150px;
         font-size: var(--size-20);
         line-height: 25px;
@@ -228,9 +230,10 @@
     }
 
     .slider__card-user-info {
-        margin-left: 10px;
+        margin-left:0;
+        align-items: flex-start;
         display: flex;
-        gap: 25px;
+        gap: 15px;
     }
 
     .slider__card {
@@ -247,7 +250,7 @@
     }
 
     .slider__card-name {
-        font-size: var(--size-32);
+        font-size: 30px;
         line-height: 40px;
         letter-spacing: -0.64px;
     }
@@ -269,7 +272,7 @@
         line-height: 30px;
         letter-spacing: -0.48px;
 
-        margin-top: 25px;
+        margin-top: 15px;
         color: black;
     }
 
