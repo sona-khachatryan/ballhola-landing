@@ -20,21 +20,28 @@ function Header({refs}) {
          <nav>
             <ul className='header__menu'>
                <li>
-                  <a className='header__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
+                  <a className='header__link' href='#features'
+                     onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
+               </li>
+               {/*<li>*/}
+               {/*   <a className='header__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>*/}
+               {/*</li>*/}
+               <li>
+                  <a className='header__link' href='#reviews'
+                     onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
                </li>
                <li>
-                  <a className='header__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>
+                  <a className='header__link' href='#download'
+                     onClick={() => scrollToSection(refs.downloadRef)}>{dict.nav.download}</a>
                </li>
                <li>
-                  <a className='header__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
-               </li>
-               <li>
-                  <a className='header__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>{dict.nav.download}</a>
+                  <a className='header__link contact_us' href='#contact'
+                     onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>
                </li>
             </ul>
          </nav>
          <div id='header__right'>
-            <a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>
+            {/*<a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>*/}
             <LngSwitcher/>
             <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
                <div className='bar'></div>
@@ -46,9 +53,9 @@ function Header({refs}) {
             <li>
                <a href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
             </li>
-            <li>
-               <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>
-            </li>
+            {/*<li>*/}
+            {/*   <a href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>*/}
+            {/*</li>*/}
             <li>
                <a href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
             </li>

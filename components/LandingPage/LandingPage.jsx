@@ -39,9 +39,9 @@ export default function LandingPage({dict}) {
             <div ref={featuresRef}>
                <Features />
             </div>
-            <div ref={demoRef}>
-               <Video />
-            </div>
+            {/*<div ref={demoRef}>*/}
+            {/*   <Video />*/}
+            {/*</div>*/}
             <div ref={reviewsRef}>
                <CustomSlider />
             </div>

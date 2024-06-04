@@ -137,6 +137,15 @@
 
     .header__link:hover {
         cursor: pointer;
+        color: var(--clr-light-turquoise);
+    }
+
+    .contact_us {
+        color: var(--clr-light-turquoise);
+    }
+
+    .contact_us:hover {
+        text-decoration: underline;
     }
 
     .header__btn {

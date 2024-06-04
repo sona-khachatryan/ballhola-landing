@@ -22,9 +22,9 @@ function Footer({refs}) {
                   <li>
                      <a className='footer__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
                   </li>
-                  <li>
-                     <a className='footer__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>
-                  </li>
+                  {/*<li>*/}
+                  {/*   <a className='footer__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>*/}
+                  {/*</li>*/}
                   <li>
                      <a className='footer__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
                   </li>
