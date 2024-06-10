@@ -11,7 +11,7 @@ import Footer from '@/components/Footer/Footer';
 import {createContext, useRef} from 'react';
 
 export const LangContext = createContext('');
-export default function LandingPage({dict}) {
+export default function LandingPage() {
 
    const heroRef = useRef(null);
    const featuresRef = useRef(null);
@@ -30,29 +30,27 @@ export default function LandingPage({dict}) {
    };
 
    return (
-      <LangContext.Provider value={dict}>
-         <main>
-            <Header refs={refs}/>
-            <div ref={heroRef}>
-               <Hero />
-            </div>
-            <div ref={featuresRef}>
-               <Features />
-            </div>
-            {/*<div ref={demoRef}>*/}
-            {/*   <Video />*/}
-            {/*</div>*/}
-            <div ref={reviewsRef}>
-               <CustomSlider />
-            </div>
-            <div ref={downloadRef}>
-               <Banner />
-            </div>
-            <div ref={contactRef}>
-               <Contact />
-            </div>
-            <Footer refs={refs}/>
-         </main>
-      </LangContext.Provider>
+      <main>
+         <Header refs={refs}/>
+         <div ref={heroRef}>
+            <Hero />
+         </div>
+         <div ref={featuresRef}>
+            <Features />
+         </div>
+         {/*<div ref={demoRef}>*/}
+         {/*   <Video />*/}
+         {/*</div>*/}
+         <div ref={reviewsRef}>
+            <CustomSlider />
+         </div>
+         <div ref={downloadRef}>
+            <Banner />
+         </div>
+         <div ref={contactRef}>
+            <Contact />
+         </div>
+         <Footer refs={refs}/>
+      </main>
    );
 }

@@ -1,29 +1,28 @@
 'use client';
 
-import React, {useContext} from 'react';
-import {LangContext} from '@/components/LandingPage/LandingPage';
+import {useTranslation} from 'react-i18next';
 
 function Banner(props) {
-
-   const dict = useContext(LangContext);
+    
+   const { t } = useTranslation();
     
    return (
       <div id='download' className='banner container'>
          <img className='banner__backdrop' src='backdrop.svg' alt='backdrop'/>
          <div className='banner__top-bg'>
             <p className='banner__title'>
-               {dict.banner.bannerTitle1}
+               {t('banner.bannerTitle1')}
             </p>
             <p className='banner__description'>
-               {dict.banner.bannerDescription1}
+               {t('banner.bannerDescription1')}
             </p>
          </div>
          <div className='banner__bottom-bg'>
             <p className='banner__title-2'>
-               {dict.banner.bannerTitle2}
+               {t('banner.bannerTitle2')}
             </p>
             <p className='banner__description-2'>
-               {dict.banner.bannerDescription2}
+               {t('banner.bannerDescription2')}
             </p>
 
             <a href='https://apps.apple.com/am/app/ballhola/id6477875455' target="_blank" rel="noopener noreferrer">

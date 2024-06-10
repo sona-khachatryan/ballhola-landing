@@ -1,15 +1,14 @@
 'use client';
 
-import React, {useContext} from 'react';
-import {LangContext} from '@/components/LandingPage/LandingPage';
+import {useTranslation} from 'react-i18next';
 
 function Features(props) {
 
-   const dict = useContext(LangContext);
+   const { t } = useTranslation();
    
    return (<>
       <section id='features' className='features container'>
-         <p className='features__title'>{dict.features.featuresTitle}</p>
+         <p className='features__title'>{t('features.featuresTitle')}</p>
          <div className='features__icon-container'>
             <img className='wave' src='wave.svg'/>
             <div className='features__icon-text-group'>
@@ -17,7 +16,7 @@ function Features(props) {
                   <img className='features__rectangle' src='Rectangle.svg'/>
                   <img className='features__vector chat' src='chat.svg'/>
                </div>
-               <p className='features__icon-description'>{dict.features.chat}</p>
+               <p className='features__icon-description'>{t('features.chat')}</p>
             </div>
 
             <div className='features__icon-text-group'>
@@ -26,7 +25,7 @@ function Features(props) {
                   <img className='features__vector pencil' style={{zIndex: 30}} src='pencil.svg'/>
                   <img className='features__vector paper' src='Vector.svg'/>
                </div>
-               <p className='features__icon-description'>{dict.features.game}</p>
+               <p className='features__icon-description'>{t('features.game')}</p>
             </div>
 
             <div className='features__icon-text-group'>
@@ -34,7 +33,7 @@ function Features(props) {
                   <img className='features__rectangle' src='Rectangle.svg'/>
                   <img className='features__vector stadium' src='stadium.svg'/>
                </div>
-               <p className='features__icon-description'>{dict.features.stadiums}</p>
+               <p className='features__icon-description'>{t('features.stadiums')}</p>
             </div>
 
             <div className='features__icon-text-group'>
@@ -42,7 +41,7 @@ function Features(props) {
                   <img className='features__rectangle' src='Rectangle.svg'/>
                   <img className='features__vector invitation' src='invitation.svg'/>
                </div>
-               <p className='features__icon-description'>{dict.features.invitation}</p>
+               <p className='features__icon-description'>{t('features.invitation')}</p>
             </div>
 
          </div>
