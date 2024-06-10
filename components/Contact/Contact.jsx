@@ -1,12 +1,12 @@
 'use client';
 
-import React, {useContext, useEffect, useState} from 'react';
-import {LangContext} from '@/components/LandingPage/LandingPage';
+import {useEffect, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import {useTranslation} from 'react-i18next';
 
 function Contact() {
-
-   const dict = useContext(LangContext);
+   
+   const { t } = useTranslation();
 
    const [nameInputValue, setNameInputValue] = useState();
    const [emailInputValue, setEmailInputValue] = useState();
@@ -28,7 +28,7 @@ function Contact() {
       if(!emailInputValue || isValidEmail(emailInputValue)) {
          setErrorMessage('');
       } else {
-         setErrorMessage(dict.contact.invalidEmail);
+         setErrorMessage(t('contact.invalidEmail'));
       }
       
    }, [emailInputValue]);
@@ -100,14 +100,14 @@ function Contact() {
                <div className='contact-info-wrapper'>
                   <div className='contact-info'>
                      <div className='contact-info__section-title'>
-                        {dict.contact.info}
+                        {t('contact.info')}
                      </div>
                      <div className="contact-info__section-wrapper">
                         <div className='contact-info__section'>
                            <img className='contact-info__phone-icon' src='phone-vector.svg' alt='phone'/>
                            <div className='contact-info__text'>
                               <p className='contact-info__title'>
-                                 {dict.contact.phonenumber}
+                                 {t('contact.phonenumber')}
                               </p>
                               <p className='contact-info__sub'>
                                   +(374) 98 02-67-19
@@ -123,7 +123,7 @@ function Contact() {
                            <img className='contact-info__message-icon' src='message.svg' alt='message'/>
                            <div className='contact-info__text'>
                               <p className='contact-info__title'>
-                                 {dict.contact.message}
+                                 {t('contact.message')}
                               </p>
                               <p className='contact-info__sub'>
                                   contanct@ballhola.app
@@ -137,7 +137,7 @@ function Contact() {
                      <div className="contact-info__section-wrapper">
                         <div className='contact-info__section socials-section'>
                            <p className='contact-info__title'>
-                              {dict.contact.sm}
+                              {t('contact.sm')}
                            </p>
                            <div className='contact-info__socials'>
                               <a href='https://www.instagram.com/ballhola.app/'
@@ -164,13 +164,13 @@ function Contact() {
                      className='contact-form'
                   >
                      <p className='contact-form__title'>
-                        {dict.contact.form}
+                        {t('contact.form')}
                      </p>
 
                      <div>
                         <input
                            className='contact-form__input'
-                           placeholder={dict.contact.namePlaceholder}
+                           placeholder={t('contact.namePlaceholder')}
                            value={nameInputValue}
                            onChange={handleNameInputChange}
                         />
@@ -178,7 +178,7 @@ function Contact() {
                      <div>
                         <input
                            className={`contact-form__input ${errorMessage ? 'input-error' : ''}`}
-                           placeholder={dict.contact.emailPlaceholder}
+                           placeholder={t('contact.emailPlaceholder')}
                            value={emailInputValue}
                            onChange={handleEmailInputChange}
                         />
@@ -186,7 +186,7 @@ function Contact() {
                      </div>
                      <textarea
                         className='contact-form__input contact-form__message-input'
-                        placeholder={dict.contact.messagePlaceholder}
+                        placeholder={t('contact.messagePlaceholder')}
                         value={messageInputValue}
                         onChange={handleMessageInputChange}
                      />
@@ -195,14 +195,14 @@ function Contact() {
                         className={`contact-form__submit-btn ${isDisabled ? 'disabled' : ''}`}
                         disabled={isDisabled}
                         onClick={handleSubmitClick}
-                     >{dict.contact.submit}
+                     >{t('contact.submit')}
                      </button>
 
                   </div>
                </div>
 
 
-               <div className={`${messageIsSent ? 'contact-form__toast' : 'invisible' }`}>{dict.contact.toaster}</div>
+               <div className={`${messageIsSent ? 'contact-form__toast' : 'invisible' }`}>{t('contact.toaster')}</div>
 
 
             </div>

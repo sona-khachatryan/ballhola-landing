@@ -1,58 +1,13 @@
 'use client';
 
-import {useContext} from 'react';
 import Slider from 'react-slick';
 import CustomSlide from '@/components/Slider/CustomSlide';
-import {LangContext} from '@/components/LandingPage/LandingPage';
 import {reviews} from '@/lib/reviews';
+import {useTranslation} from "react-i18next";
 
-const reviewDataMockup = [
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 5,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 4,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 3,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 5,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 5,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 5,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-   {
-      image: 'userPhoto.jpg',
-      name: 'John Smith',
-      rating: 5,
-      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed',
-   },
-];
 function CustomSlider(props) {
 
-   const dict = useContext(LangContext);
+   const { t } = useTranslation();
 
    const settings = {
       infinite: true,
@@ -192,7 +147,7 @@ function CustomSlider(props) {
       <div id='reviews' className='slider-main-container container'>
          <div className='slider__title-container container'>
             <p className='slider__title'>
-               {dict.reviews.title}
+               {t('reviews.title')}
             </p>
          </div>
 

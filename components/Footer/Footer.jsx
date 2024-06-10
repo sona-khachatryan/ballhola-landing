@@ -1,11 +1,10 @@
 'use client';
 
-import {useContext} from 'react';
-import {LangContext} from '@/components/LandingPage/LandingPage';
+import {useTranslation} from 'react-i18next';
 
 function Footer({refs}) {
-
-   const dict = useContext(LangContext);
+   
+   const { t } = useTranslation();
 
    const scrollToSection = (sectionRef) => {
       sectionRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -20,23 +19,23 @@ function Footer({refs}) {
                      <img className='footer__logo' src='Logo.svg' alt='logo' onClick={() => scrollToSection(refs.heroRef)}/>
                   </li>
                   <li>
-                     <a className='footer__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{dict.nav.features}</a>
+                     <a className='footer__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{t('nav.features')}</a>
                   </li>
                   {/*<li>*/}
-                  {/*   <a className='footer__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{dict.nav.demo}</a>*/}
+                  {/*   <a className='footer__link' href='#demo' onClick={() => scrollToSection(refs.demoRef)}>{t('nav.demo')}</a>*/}
                   {/*</li>*/}
                   <li>
-                     <a className='footer__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{dict.nav.reviews}</a>
+                     <a className='footer__link' href='#reviews' onClick={() => scrollToSection(refs.reviewsRef)}>{t('nav.reviews')}</a>
                   </li>
                   <li>
-                     <a className='footer__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>{dict.nav.download}</a>
+                     <a className='footer__link' href='#download' onClick={() => scrollToSection(refs.downloadRef)}>{t('nav.download')}</a>
                   </li>
                   <li>
-                     <a className='footer__link' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>
+                     <a className='footer__link' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{t('nav.contact')}</a>
                   </li>
                </ul>
             </nav>
-            <p className='footer__text'>{dict.footer.rights}</p>
+            <p className='footer__text'>{t('footer.rights')}</p>
          </footer>
       </div>
    );

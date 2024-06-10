@@ -1,23 +1,23 @@
-import React, {useContext, useEffect} from 'react';
-import {LangContext} from '@/components/LandingPage/LandingPage';
+'use client';
+import {useTranslation} from 'react-i18next';
 
 function Hero(props) {
-   const dict = useContext(LangContext);
+   const { t } = useTranslation();
 
    return (<>
       <section className='hero container'>
          <div className='hero__text-container'>
             <div className='hero__text__1'>
-               {dict.hero.discover}
+               {t('hero.discover')}
             </div>
             <div className='hero__text__2'>
-               {dict.hero.our} <span>{dict.hero.app}</span> {dict.hero.connects} <br/>
-               {dict.hero.players} <span> {dict.hero.matches}</span>
+               {t('hero.our')} <span>{t('hero.app')}</span> {t('hero.connects')} <br/>
+               {t('hero.players')} <span> {t('hero.matches')}</span>
             </div>
             <div className='hero__text__3'>
-               {dict.hero.welcome}
+               {t('hero.welcome')}
                <br/>
-               {dict.hero.ready}
+               {t('hero.ready')}
             </div>
          </div>
          <div className='hero__image-container '>
