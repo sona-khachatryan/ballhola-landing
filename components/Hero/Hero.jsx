@@ -4,10 +4,6 @@ import {LangContext} from '@/components/LandingPage/LandingPage';
 function Hero(props) {
    const dict = useContext(LangContext);
 
-   useEffect(() => {
-      console.log(dict)
-   }, [dict]);
-
    return (<>
       <section className='hero container'>
          <div className='hero__text-container'>

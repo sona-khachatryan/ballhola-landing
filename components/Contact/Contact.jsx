@@ -140,9 +140,17 @@ function Contact() {
                               {dict.contact.sm}
                            </p>
                            <div className='contact-info__socials'>
-                              <img className='contact-info__socials-icon' src='instagram.svg' alt='instagram'/>
-                              <img className='contact-info__socials-icon' src='facebook.svg' alt='facebook'/>
+                              <a href='https://www.instagram.com/ballhola.app/'
+                                 target="_blank" rel="noopener noreferrer">
+                                 <img className='contact-info__socials-icon' src='instagram.svg' alt='instagram'/>
+                              </a>
+                              <a href='https://www.facebook.com/ballhola'
+                                 target="_blank" rel="noopener noreferrer">
+                                 <img className='contact-info__socials-icon' src='facebook.svg' alt='facebook'/>
+                              </a>
+                              {/*<a href='https://www.instagram.com/ballhola.app/' target="_blank" rel="noopener noreferrer">*/}
                               <img className='contact-info__socials-icon' src='linkedin.svg' alt='linkedin'/>
+                              {/*</a>*/}
                            </div>
                         </div>
                      </div>
@@ -153,7 +161,7 @@ function Contact() {
 
                <div className='contact-form-wrapper'>
                   <div
-                     className='contact-form'
+                      className='contact-form'
                   >
                      <p className='contact-form__title'>
                         {dict.contact.form}
