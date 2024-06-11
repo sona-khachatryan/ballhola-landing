@@ -41,7 +41,7 @@ function Hero(props) {
 
             <Image className='hero__player-image' src='player.svg' alt='player' priority unoptimized height={401}
                width={548}/>
-            <Image className='hero__phone-image' src='phone.svg' alt='phone' priority unoptimized height={478}
+            <Image className='hero__phone-image' src='phone.png' alt='phone' priority unoptimized height={478}
                width={455}/>
          </div>
       </section>

@@ -9,7 +9,7 @@ function CustomSlide({index, user}) {
          <div className='slider__card'>
             <div className='slider__card-user-info'>
                {/*<img className='slider__card-image' src={user.image} alt='user'/>*/}
-               {/*<Image className='slider__card-image' src={user.image} alt='user' priority unoptimized height={44} width={44}/>*/}
+               <Image className='slider__card-image' src={user.image} alt='user' priority unoptimized height={44} width={44}/>
                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
                   <p className='slider__card-name'>
                      {user.name}
