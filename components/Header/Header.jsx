@@ -3,6 +3,7 @@
 import {useState} from 'react';
 import LngSwitcher from '@/components/LngSwitcher/LngSwitcher';
 import {useTranslation} from 'react-i18next';
+import Image from 'next/image';
 
 function Header({refs}) {
 
@@ -15,8 +16,8 @@ function Header({refs}) {
 
    return (<>
       <header className='header container'>
-         {/*<img/>*/}
-         <img className='header__logo' src='Logo.svg' alt='logo'/>
+         {/*<img className='header__logo' src='Logo.svg' alt='logo'/>*/}
+         <Image className='header__logo' src='Logo.svg' alt='logo' priority unoptimized height={46} width={49}/>
          <nav>
             <ul className='header__menu'>
                <li>
@@ -43,7 +44,7 @@ function Header({refs}) {
          <div id='header__right'>
             {/*<a className='header__btn' href='#contact' onClick={() => scrollToSection(refs.contactRef)}>{dict.nav.contact}</a>*/}
             <LngSwitcher/>
-            <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}`}>
+            <button onClick={() => setIsActive(!isActive)} className={`hamburger ${isActive ? 'is-active' : ''}'`} title='menu'>
                <div className='bar'></div>
             </button>
          </div>

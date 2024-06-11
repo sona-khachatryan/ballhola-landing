@@ -1,6 +1,7 @@
 'use client';
 
 import {useTranslation} from 'react-i18next';
+import Image from 'next/image';
 
 function Footer({refs}) {
    
@@ -16,7 +17,8 @@ function Footer({refs}) {
             <nav>
                <ul className='footer__menu'>
                   <li>
-                     <img className='footer__logo' src='Logo.svg' alt='logo' onClick={() => scrollToSection(refs.heroRef)}/>
+                     {/*<img className='footer__logo' src='Logo.svg' alt='logo' onClick={() => scrollToSection(refs.heroRef)}/>*/}
+                     <Image className='footer__logo' src='Logo.svg' alt='logo' onClick={() => scrollToSection(refs.heroRef)} priority unoptimized height={31} width={31}/>
                   </li>
                   <li>
                      <a className='footer__link' href='#features' onClick={() => scrollToSection(refs.featuresRef)}>{t('nav.features')}</a>

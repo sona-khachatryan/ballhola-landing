@@ -59,16 +59,21 @@
     font-size: var(--size-12);
     line-height: 15px;
     letter-spacing: -0.24px;
-    display: block;
+    /*display: block;*/
+    width: fit-content;
+
+    /*border: 1px solid pink;*/
 }
 
 .banner__description {
     margin-left: 20px;
-    width: 248px;
+    /*width: 248px;*/
 }
 
 .banner__description-2 {
     margin-right: 20px;
+    display: flex;
+    justify-content: right;
 }
 
 .banner__bottom-bg {
@@ -85,21 +90,23 @@
     align-items: flex-end;
 }
 
+.banner-logo-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
 .banner__appstore-logo {
-    width: 69px;
+    width: auto;
     height: 25px;
-    top: 54px;
-    right: 122px;
-    position: absolute;
     cursor: pointer;
 }
 
 .banner__googleplay-logo {
-    width: 77px;
+    width: auto;
     height: 25px;
-    top: 54px;
-    right: 30px;
-    position: absolute;
     cursor: pointer;
 }
 
@@ -178,18 +185,15 @@
         top: 152px;
     }
 
+    .banner-logo-container {
+        margin-right: 30px;
+    }
     .banner__appstore-logo {
-        width: 103px;
         height: 36px;
-        top: 76px;
-        right: 165px;
     }
 
     .banner__googleplay-logo {
-        width: 114px;
         height: 36px;
-        top: 76px;
-        right: 30px;
     }
 
 }
@@ -265,18 +269,17 @@
         top: 270px;
     }
 
+    .banner-logo-container {
+        margin-right: 70px;
+        gap: 20px;
+    }
+
     .banner__appstore-logo {
-        width: 162px;
         height: 39px;
-        top: 110px;
-        right: 201px;
     }
 
     .banner__googleplay-logo {
-        width: 181px;
         height: 39px;
-        top: 110px;
-        right: 50px;
     }
 
 }
@@ -334,18 +337,17 @@
         top: 320px;
     }
 
+    .banner-logo-container {
+        margin-right: 90px;
+        gap: 30px;
+    }
+
     .banner__appstore-logo {
-        width: 192px;
         height: 69px;
-        top: 140px;
-        right: 331px;
     }
 
     .banner__googleplay-logo {
-        width: 211px;
         height: 69px;
-        top: 140px;
-        right: 90px;
     }
 
 }

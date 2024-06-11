@@ -3,6 +3,7 @@
 import {useEffect, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import {useTranslation} from 'react-i18next';
+import Image from 'next/image';
 
 function Contact() {
    
@@ -207,12 +208,21 @@ function Contact() {
 
             </div>
          </div>
-         <img id='ball1' src='ball1.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
-         <img id='ball2' src='ball2.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
-         <img id='ball3' src='ball3.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
-         <img id='ball4' src='ball4.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
-         <img id='ball5' src='ball5.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
-         <img id='ball6' src='ball6.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>
+         {/*<img id='ball1' src='ball1.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+         {/*<img id='ball2' src='ball2.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+         {/*<img id='ball3' src='ball3.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+         {/*<img id='ball4' src='ball4.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+         {/*<img id='ball5' src='ball5.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+         {/*<img id='ball6' src='ball6.svg' alt='ball' className={hovered ? 'show-ball' : ''}/>*/}
+
+         <Image id='ball1' src='ball1.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+         <Image id='ball2' src='ball2.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+         <Image id='ball3' src='ball3.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+         <Image  id='ball4' src='ball4.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+         <Image id='ball5' src='ball5.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+         <Image id='ball6' src='ball6.svg' alt='ball' className={hovered ? 'show-ball' : ''} priority unoptimized height={100} width={100}/>
+
+
 
       </div>
    );

@@ -26,7 +26,7 @@ const sourceSans3 = Source_Sans_3 ({
 
 export const metadata = {
    title: 'BallHola',
-   description: '',
+   description: 'Our football app connects players for exciting matches',
 };
 
 export async function generateStaticParams() {

@@ -3,7 +3,7 @@
 import Slider from 'react-slick';
 import CustomSlide from '@/components/Slider/CustomSlide';
 import {reviews} from '@/lib/reviews';
-import {useTranslation} from "react-i18next";
+import {useTranslation} from 'react-i18next';
 
 function CustomSlider(props) {
 
